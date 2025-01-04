@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Your Chrome Extension Name",
+  "name": "Chrome Extension",
   "version": "0.1",
-  "author": "First Last",
+  "author": "Shah Mohammad",
   "description": "A description about your Chrome Extension...",
   "permissions": [
     ""
