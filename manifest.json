@@ -1,16 +1,17 @@
 {
   "manifest_version": 3,
-  "name": "Chrome Extension",
+  "name": "Problem Tracker",
   "version": "0.1",
-  "author": "Shah Mohammad!",
-  "description": "A description about your Chrome Extension...",
+  "author": "Shah Mohammad",
+  "description": "A Chrome Extension that help us to track the problem",
   "permissions": [
-    ""
+    "storage",
+    "tabs"
   ],
   "content_scripts": [
     {
       "matches": [
-        "<all_urls>"
+        "https://maang.in/problems/*"
       ],
       "js": [
         "content.js"
@@ -22,17 +23,21 @@
   },
   "web_accessible_resources" : [
     {
-      "resources": [],
+      "resources": [
+        "assets/bookmark.png",
+        "assets/delete.png",
+        "assets/play.png"
+      ],
       "matches" : ["<all_urls>"]
     }
   ],
   "action": {
     "default_icon": {
-      "16": "logo.png",
-      "24": "logo.png",
-      "32": "logo.png"
+      "16": "assets/ext-icon.png",
+      "24": "assets/ext-icon.png",
+      "32": "assets/ext-icon.png"
     },
-    "default_popup": "index.html",
-    "default_title": "A tooltip popup description when you hover over the Chrome Extension icon."
+    "default_popup": "popup.html",
+    "default_title": "Problem Tracker"
   }
 }
