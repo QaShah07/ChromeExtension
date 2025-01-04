@@ -1,4 +1,4 @@
-# Chrome-Extension-Base-Template
+# Chrome-Extension
 This is a basic Chrome Extension base template for starting new projects off of initialized with a MIT license.
 
 ## Features
